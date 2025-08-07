@@ -1,0 +1,191 @@
+.service-container {
+  font-family: 'Orbitron', 'Arial', sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0;
+  background: linear-gradient(135deg, #1A1A3D, #0e52ff);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px #A100F2, 0 0 30px #A100F2;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.holo-graphic {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 4px solid #0f0016;
+  border-radius: 10px;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px #A100F2;
+  position: relative;
+  overflow: hidden;
+}
+
+.holo-graphic p {
+  font-size: 1.2rem;
+  color: #A100F2;
+  text-shadow: 0 0 10px #A100F2;
+}
+
+.holo-graphic::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(161, 0, 242, 0.2) 0%, transparent 70%);
+  animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.hero p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+  color: #E0E0FF;
+}
+
+.services {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 0 15px #A100F2;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2.5rem;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 35, 118, 0.5);
+  box-shadow: 0 0 15px rgba(161, 0, 242, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 0 25px #A100F2;
+}
+
+.service-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 0 0 10px #A100F2;
+}
+
+.service-card p {
+  font-size: 1.1rem;
+  color: #E0E0FF;
+}
+
+.cta {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.cta h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 15px #A100F2;
+}
+
+.cta p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #E0E0FF;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: #A100F2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px #A100F2;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #A100F2;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #1A1A3D;
+  color: #E0E0FF;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .holo-graphic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .services h2 {
+    font-size: 2.2rem;
+  }
+
+  .cta h2 {
+    font-size: 2.2rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+  }
+}
